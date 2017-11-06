@@ -1,0 +1,8 @@
+- @comments.each do |comment|
+  .comment_content=	comment.content
+  - if current_user == comment.user
+    = link_to "Delete", [comment.movie, comment], method: :delete, :class => "comment_links btn btn-danger", :notice => "succesfully deleted comment"
+    = link_to "Edit", edit_movie_comment_path(comment.movie, comment), :class => "comment_links btn btn-warning"
+
+  %hr
+= render 'comments/form'

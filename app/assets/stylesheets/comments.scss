@@ -1,0 +1,30 @@
+// Place all the styles related to the comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.comment_area {
+  font-size: 16px;
+  width:300px;
+  height: 100px;
+  resize: none;
+  float: left;
+  margin-right: 10px;
+}
+.create_comment_button{
+  float: left;
+}
+hr{
+  margin: 5px;
+  width: 100%;
+}
+.comment_content{
+  float: left;
+  border-radius: 25px;
+  width: 80%;
+  padding: 0.5rem 1rem;
+  margin: 10px 0px;
+}
+.comment_links{
+  margin: 0 1px;
+  float: right;
+
+}
